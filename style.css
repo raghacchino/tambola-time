@@ -7,7 +7,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
     font-family: 'Bjola';
 }
 
@@ -17,10 +16,76 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 48px;
 }
 
 h1 {
-    color: #1A169A;
+    color: #1a169a;
     -webkit-text-stroke: 2px #fff;
     font-size: 64px;
+}
+
+button {
+    /* position: relative; */
+    outline: none;
+    border: none;
+    background-color: #16239a;
+    color: #ffe600;
+    padding: 12px 24px 16px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 30px; */
+    border-radius: 12px;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    color: #ffd000;
+    background-color: #1a169a;
+}
+
+button:hover span {
+    position: relative;
+    /* top: 5px; */
+    /* display: inline-block; */
+    animation: bounce 0.4s linear infinite alternate;
+}
+
+@keyframes bounce {
+    0% {
+        top: 5px;
+    }
+    100% {
+        top: -5px;
+    }
+}
+
+button span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+button span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+button span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+button span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+button span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+button span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+button span:nth-child(8) {
+    animation-delay: 0.7s;
 }
