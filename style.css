@@ -106,10 +106,13 @@ button span:nth-child(8) {
     grid-template-rows: repeat(9, 1fr);
     /* margin: 50px; */
     gap: 20px;
+    background-color: #1a169a;
+    padding: 20px;
+    border-radius: 24px;
 }
 
 .number-grid .number {
-    background-color: #1a169a;
+    background-color: #ffe600;
     display: flex;
     height: 32px;
     width: 32px;
@@ -117,7 +120,8 @@ button span:nth-child(8) {
     /* margin: 0 auto; */
     justify-content: center;
     border-radius: 50%;
-    color: #fff;
+    /* color: #fff; */
     font-weight: 600;
     font-size: 18px;
+    opacity: 0.7;
 }
