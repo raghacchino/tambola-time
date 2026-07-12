@@ -33,73 +33,6 @@ h1 {
     font-size: 64px;
 }
 
-button {
-    /* position: relative; */
-    outline: none;
-    border: none;
-    background-color: #16239a;
-    color: #ffe600;
-    padding: 12px 24px 16px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* height: 30px; */
-    border-radius: 12px;
-    letter-spacing: 1px;
-    font-family: 'Bjola';
-}
-
-/* button:hover {
-    color: #ffd000;
-    background-color: #1a169a;
-} */
-
-button:hover span {
-    position: relative;
-    /* top: 5px; */
-    /* display: inline-block; */
-    animation: bounce 0.4s linear infinite alternate;
-}
-
-@keyframes bounce {
-    0% {
-        top: 5px;
-    }
-
-    100% {
-        top: -5px;
-    }
-}
-
-button span:nth-child(2) {
-    animation-delay: 0.1s;
-}
-
-button span:nth-child(3) {
-    animation-delay: 0.2s;
-}
-
-button span:nth-child(4) {
-    animation-delay: 0.3s;
-}
-
-button span:nth-child(5) {
-    animation-delay: 0.4s;
-}
-
-button span:nth-child(6) {
-    animation-delay: 0.5s;
-}
-
-button span:nth-child(7) {
-    animation-delay: 0.6s;
-}
-
-button span:nth-child(8) {
-    animation-delay: 0.7s;
-}
-
 .number-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -124,4 +57,102 @@ button span:nth-child(8) {
     font-weight: 600;
     font-size: 18px;
     opacity: 0.7;
+}
+
+.info-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    /* border: 1px solid red; */
+}
+
+.info-div button {
+    /* position: relative; */
+    outline: none;
+    border: none;
+    background-color: #16239a;
+    color: #ffe600;
+    padding: 12px 24px 16px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    /* height: 30px; */
+    border-radius: 12px;
+    letter-spacing: 1px;
+    font-family: 'Bjola';
+    margin-bottom: 32px;
+}
+
+/* .info-div button:hover {
+    color: #ffd000;
+    background-color: #1a169a;
+} */
+
+.info-div button:hover span {
+    position: relative;
+    /* top: 5px; */
+    /* display: inline-block; */
+    animation: bounce 0.4s linear infinite alternate;
+}
+
+.info-div button span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.info-div button span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.info-div button span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.info-div button span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.info-div button span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.info-div button span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.info-div button span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+@keyframes bounce {
+    0% {
+        top: 5px;
+    }
+
+    100% {
+        top: -5px;
+    }
+}
+
+.info-div .current-number {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    color: #16239abe;
+    font-size: 36px;
+    font-weight: 600;
+    /* -webkit-text-stroke: 1px #fff; */
+    /* font-family: 'Bjola'; */
+    margin-top: 20px;
+}
+
+.info-div .current-number span {
+    color: #1a169a;
+    font-size: 72px;
+    font-family: 'Bjola';
+    -webkit-text-stroke: 3px #fff;
 }
