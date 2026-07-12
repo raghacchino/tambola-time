@@ -59,6 +59,11 @@ h1 {
     opacity: 0.7;
 }
 
+.number.done {
+    /* background-color: #ffe600; */
+    opacity: 1;
+}
+
 .info-div {
     display: flex;
     flex-direction: column;
@@ -91,6 +96,14 @@ h1 {
     color: #ffd000;
     background-color: #1a169a;
 } */
+
+.info-div #generateBtn:active span {
+    animation-play-state: paused;
+}
+
+.info-div #resetBtn:active span {
+    animation-play-state: paused;
+}
 
 .info-div button:hover span {
     position: relative;
