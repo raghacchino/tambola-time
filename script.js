@@ -38,8 +38,10 @@ generateBtn.addEventListener("click", () => {
         // generateNumber()
         showNumber(generatedNumber)
     } else {
-        // console.log('repeat number found' + generatedNumber)
+        console.log('repeat number found' + generatedNumber)
+        // generateNumber()
         generatedNumber = generateNumber()
+        // console.log(generatedNumber)
         showNumber(generatedNumber)
         // excludedNumbers.push(generatedNumber)
         // currentText.innerText = generatedNumber
